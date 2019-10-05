@@ -137,3 +137,164 @@ li a {
   background-color: #f5f5f5;
   display: flex;
 }
+
+.interested {
+  width: 100%;
+}
+
+.interested-title {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.interested-text{
+  line-height: 24px;
+  text-align: center;
+  padding: 0 250px;
+  color: #606060;
+}
+
+.search-title {
+  width: 450px;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: #71635a;
+  color: white;
+  text-align: center;
+}
+
+.map-boared {
+  background-image: url("../img/map.png");
+  width: 100%;
+  height: 400px;
+}
+
+.search-board {
+  width: 450px;
+  height: 320px;
+  margin: auto;
+  margin-top: 0px;
+  background-color: white;
+  box-shadow: 0 0 15px #666666;
+}
+
+.search-form {
+  padding: 40px;
+}
+
+.search-line {
+  display: flex;
+  width: auto;
+  padding: 10px 0;
+}
+
+.search-label{
+  padding: 5px 0;
+}
+
+.search-input {
+  padding: 5px;
+  margin-left: auto;
+  margin-right: 0px;
+  width: 280px;
+  height: 20px;
+}
+
+.search-adults {
+  display: flex;
+}
+
+.search-kids {
+  display: flex;
+  margin-right:0;
+  margin-left: auto;
+}
+
+.number-module{
+  height: 30px;
+  display: flex;
+}
+
+.number{
+  width: 35px;
+}
+
+.adults {
+  margin-right: 26px;
+}
+
+.kids {
+  margin-right: 15px;
+}
+
+.search-minus-btn {
+  margin-right: -1px;
+  width: 30px;
+}
+
+.search-plus-btn {
+  margin-left: -1px;
+  width: 30px;
+}
+
+.number-btn {
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  color: #606060;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.search-btn {
+  display: flex;
+}
+
+.search-submit-btn {
+  margin: auto;
+  margin-top: 45px;
+  border: none;
+  background-color: #c1c8db;
+  width: 130px;
+  height: 35px;
+  color: white;
+}
+
+.search-submit-btn:hover {
+  background-color: #a3adc4;
+}
+
+.footer-container {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+}
+
+.tag {
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.social {
+  margin: auto;
+}
+
+.my-logo {
+  padding-top: 10px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+i {
+  font-size: 30px;
+  color:#909090;
+  padding:5px;
+}
+
+i:hover {
+  color: black;
+}

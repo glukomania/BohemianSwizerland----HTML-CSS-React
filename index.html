@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Bohemian Switzerland</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
@@ -13,7 +14,7 @@
             <ul class="nav-list">
               <li><a href="">INFO</a></li>
               <li><a href="">GALLERY</a></li>
-              <li><img src="img/logo5.png" width="100px"></li>
+              <li><img src="img/logo6.png" width="70px"></li>
               <li><a href="">MAP</a></li>
               <li><a href="">HOTELS</a></li>
             </ul>
@@ -86,19 +87,64 @@
 
     <section class="map">
       <div class="interested">
+        <h1 class="interested-title">ARE YOU INTERESTED?</h1>
+        <p class="interested-text">Indicate the dates you want to come and we will show you a number of possible accomodation.</p>
+        <div class="search-title">
+            SEARCH OF ACCOMODATION
+        </div>
       </div>
 
-      <div class="map-borad">
-      </div>
+      <div class="map-boared">
+        <div class="search-board">
+          <form class="search-form">
+            <div class="search-line">
+                <label class="search-label" id="search-date-in">Date in:</label>
+                <input class="search-input" type="text" for="search-date-in" placeholder="14 Oct">
+            </div>
+            
+            <div class="search-line">
+                <label class="search-label" id="search-date-out">Date out:</label>
+                <input class="search-input" type="text" for="search-date-out" placeholder="24 Oct">
+            </div>
 
-      <div class="search-form">
+            <div class="search-line">
+              <div class="search-adults">
+                <label class="search-label adults" id="search-adults">Adults:</label>
+                <div class="number-module">
+                    <button class="search-minus-btn number-btn">-</button>
+                    <input class="number" type="text" for="search-adults">
+                    <button class="search-plus-btn number-btn">+</button>
+                </div>
+              </div>
+
+              <div class="search-kids">
+                <label class="search-label kids" id="search-children">Kids:</label>
+                <div class="number-module">
+                    <button class="search-minus-btn number-btn">-</button>
+                    <input class="number" type="text" for="search-adults">
+                    <button class="search-plus-btn number-btn">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-btn">
+              <button class="search-submit-btn">SEARCH</button>
+            </div>
+            
+          </form>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <div class="tag"><p>#ceskesvycarsko</p></div>
-      <div class="social"></div>
-      <div class="my-logo"></div>
+    <footer class="footer-container">
+      <div class="tag">#ceskesvycarsko</div>
+      <div class="social">
+            <i class="fa fa-2x fa-instagram"></i>
+            <i class="fa fa-2x fa-youtube"></i>
+      </div>
+      <div class="my-logo">
+          © Feel design studio.
+      </div>
     </footer>
 
   </body>

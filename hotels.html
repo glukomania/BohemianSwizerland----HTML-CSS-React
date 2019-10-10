@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <title>Bohemian Switzerland</title>
+    <style>
+        body {
+          background-image: url('./img/header_gauss.png');
+          background-size: 100% 300px;
+          background-position: top center;
+          background-repeat: no-repeat;
+        } 
+    </style>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="main-navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">INFO</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><img src="img/logo3.png" width="120px"></li>
+            <li><a href="map.html">MAP</a></li>
+            <li class="menu-active">HOTELS</li>
+          </ul>
+      </nav>
+    </header>
+
+    <section class="filters">
+      <div class="services">
+        <label class="filters-title">SERVICES:</label><br><br>
+        <div class="filter-point">
+          <label class="filter-label">
+            <input class="checkbox" name="pool" type="checkbox"">
+            <span class="checkmark"></span>
+            Sweaming pool
+          </label>
+        </div>
+
+        <div class="filter-point">
+          <label class="filter-label">
+            <input class="checkbox" value="Parking" type="checkbox">
+            <span class="checkmark"></span>
+            Parking
+          </label>
+        </div>
+        
+        <div class="filter-point">
+          <label class="filter-label">
+            <input class="checkbox" value="Wifi" type="checkbox">
+            <span class="checkmark"></span>
+            Wifi
+          </label>
+        </div>
+      </div>
+
+      <div class="type">
+        <label class="filters-title">TYPE OF ACCOMODATION:</label><br><br>
+
+        <div class="filter-point">
+          <label class="filter-label">
+            <input class="checkbox" value="Hotel" type="checkbox" checked>
+            <span class="checkmark"></span>
+            Hotel
+          </label>
+        </div>
+
+        <div class="filter-point">
+          <label class="filter-label">
+            <input class="checkbox" value="Apartments" type="checkbox">
+            <span class="checkmark"></span>
+            Apartments
+          </label>
+        </div>
+
+        <div class="filter-point">
+          <label class="filter-label">
+            <input class="checkbox" value="Houses" type="checkbox">
+            <span class="checkmark"></span>
+            Houses
+          </label>
+        </div>
+      </div>
+      <div class="price">
+        <label class="filters-title">PRICE PER DAY:</label><br><br>
+        <div class="filter-slider-label-wrapper">
+          <div class="filter-slider-label-left">0 Kč</div>
+          <div class="filter-slider-label-right">15000 Kč</div>
+        </div>
+
+        <div class="slider">
+          <input id="tstatRange" type="range" style="width: 220px; height: 30px" min="0" max="1000" step = "0.1" list="increments">
+        </div>
+
+        <div class="search-btn-wrapper">
+          <button class="search-btn">
+            <span class="search-btn-text">SHOW</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-header">
+      <div class="result-title">FOUND: 15</div>
+      <div class="sorting">
+        <div class="sorting-header">SORTING:</div>
+        <div><a class="sorting-type active" href="">BY PRICE</a></div>
+        <div><a class="sorting-type" href="">BY TYPE</a></div>
+        <div><a class="sorting-type" href="">BY RATING</a></div>
+      </div>
+      <div class="sorting-direction">
+        <div class="sorting-direction-up"><i class="fa fa-caret-up"></i></div>
+        <div class="sorting-direction-down"><i class="fa fa-caret-down"></i></div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="result">
+      <div class="hotel">
+        <div class="hotel-picture">
+          <img src="img/hotel1.png">
+        </div>
+
+        <div class="hotel-info">
+          <div class="hotel-title">
+            STEIGER SEBNITZER HOF
+          </div>
+          <div class="hotel-type-price">
+            <div class="hote-type">HOTEL</div>
+            <div class="hotel-price">FROM 900 Kč</div>
+          </div>
+          <div class="hotel-buttons">
+            <button class="btn btn-more">MORE DETAILS</button>
+            <button class="btn btn-book">BOOK</button>
+          </div>
+        </div>
+
+        <div class="hotel-rates">
+          <div class="hotel-stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="hotel-rating">
+            <div class="hotel-rating-plaque">RATE: 8.5</div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="hotel">
+        <div class="hotel-picture">
+          <img src="img/hotel2.png">
+        </div>
+
+        <div class="hotel-info">
+          <div class="hotel-title">
+            HOTEL AUGUSTUSBERG
+          </div>
+          <div class="hotel-type-price">
+            <div class="hote-type">HOTEL</div>
+            <div class="hotel-price">FROM 1100 Kč</div>
+          </div>
+          <div class="hotel-buttons">
+            <button class="btn btn-more">MORE DETAILS</button>
+            <button class="btn btn-book">BOOK</button>
+          </div>
+        </div>
+
+        <div class="hotel-rates">
+          <div class="hotel-stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="hotel-rating">
+            <div class="hotel-rating-plaque">RATE: 5.5</div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="hotel">
+        <div class="hotel-picture">
+          <img src="img/hotel3.png">
+        </div>
+
+        <div class="hotel-info">
+          <div class="hotel-title">
+            VILLA ELSE
+          </div>
+          <div class="hotel-type-price">
+            <div class="hote-type">APARTMENTS</div>
+            <div class="hotel-price">FROM 980 Kč</div>
+          </div>
+          <div class="hotel-buttons">
+            <button class="btn btn-more">MORE DETAILS</button>
+            <button class="btn btn-book">BOOK</button>
+          </div>
+        </div>
+
+        <div class="hotel-rates">
+          <div class="hotel-stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="hotel-rating">
+            <div class="hotel-rating-plaque">RATE: 9.5</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <footer class="footer-container">
+      <div class="tag">#ceskesvycarsko</div>
+      <div class="social">
+            <i class="fa fa-2x fa-instagram"></i>
+            <i class="fa fa-2x fa-youtube"></i>
+      </div>
+      <div class="my-logo">
+          © Feel design.
+      </div>
+    </footer>
+
+  </body>
+</html>

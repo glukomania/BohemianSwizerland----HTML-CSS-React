@@ -1,50 +1,55 @@
 body {
   margin: 0px;
-
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #303030;
-
-  background-image: url('../img/header1.jpg');
-  background-size: 100% 400px;
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .main-navigation{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff;
+  background-color: white;
+  height: 40px;
+  background-color: white;
 }
 
 a {
   text-decoration: none;
 }
 
-a:hover{
-  background-color: transparent;
-  color: black;
-}
-
 .nav-list {
-  width: 100%;
   list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+  margin: auto;
 }
 
 li {
-  height: 35px;
   float: left;
+  padding: 10px 50px 0px 50px;
+}
+
+li img {
+  margin-top: -20px;
+  z-index: 3;
+  position: relative;
+}
+
+li a:hover {
+  background-color: #f5f5f5;
+  color: black;
 }
 
 li a {
-  margin-top: 10px;
+  font: inherit;
   display: block;
   text-align: center;
-  padding: 0px 50px 0px 50px;
   color: #606060;
+  font-size: 12px;
+}
+
+.menu-active {
+
+  color: black;
   font-size: 12px;
 }
 
@@ -165,6 +170,10 @@ li a {
   text-align: center;
 }
 
+.map-wrapper {
+  height: 600px;
+}
+
 .map-boared {
   background-image: url("../img/map.png");
   width: 100%;
@@ -249,6 +258,12 @@ li a {
   font-size: 16px;
 }
 
+.number-btn:hover {
+  background-color: #c1c8db;
+  color: white;
+  border: none;
+}
+
 .search-btn {
   display: flex;
 }
@@ -257,19 +272,20 @@ li a {
   margin: auto;
   margin-top: 45px;
   border: none;
-  background-color: #c1c8db;
+  background-color: #90b1cf;
   width: 130px;
   height: 35px;
   color: white;
 }
 
 .search-submit-btn:hover {
-  background-color: #a3adc4;
+  background-color: #abc6db;
 }
 
 .footer-container {
+  margin-top: 0px;
   display: flex;
-  background-color: white;
+  background-color: #F5F5F5;
   padding: 20px;
 }
 
@@ -296,5 +312,260 @@ i {
 }
 
 i:hover {
-  color: black;
+  color: #90b1cf;
+}
+
+
+
+/************************* HOTELS *******************************/
+
+.filters {
+  display: flex;
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+.services {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.type {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price {
+  margin-left: auto;
+  margin-right: 0;  
+}
+
+
+.checkbox {
+  visibility: hidden;
+}
+
+.filter-label {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.filter-point {
+  margin-bottom: 10px;
+}
+
+.filter-label:hover,
+.filter-label:focus {
+  color: #90b1cf;
+}
+
+.filter-label input[type="checkbox"] + .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+}
+
+.filter-label input[type="checkbox"]:focus + .checkmark {
+  border-color: black;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-label input[type="checkbox"]:checked + .checkmark::before,
+.filter-label input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+
+.filter-slider-label-wrapper {
+  font-size: 12px;
+  display: flex;
+}
+
+.filter-slider-label-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.filter-slider-label-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.search-btn-wrapper {
+  display: flex;
+}
+
+.search-btn {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  width: 220px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  
+}
+
+.search-btn-text {
+  margin: auto;
+}
+
+.search-btn:hover {
+  background-color: white;
+  color: #90b1cf;
+  border: none;
+}
+
+.result-header {
+  display: flex;
+  height: 0px;
+  padding: 50px;
+}
+
+.result-title {
+  font-size: 22px;
+  width: 450px;
+  font-weight: 600;
+}
+
+.sorting {
+  margin-left: 0;
+  margin-right: auto;
+  display: flex;
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.sorting-header {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.sorting-type {
+  margin-left: 50px;
+}
+
+.sorting-type {
+  color: #90b1cf;
+  border-bottom: 1px dotted #90b1cf;
+}
+
+.sorting-type:hover {
+  color: #606060;
+}
+
+.sorting-direction {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.active {
+  color: #909090;
+  border-bottom: none;
+}
+
+hr {
+  border: 1px solid #f5f5f5;
+}
+
+/* HOTELS result */
+
+.hotel {
+  display: flex;
+  padding: 20px 50px 20px 50px;
+}
+
+.hotel-picture img {
+  width: 150px;
+}
+
+.hotel-info {
+  padding-left: 30px;
+  width: 500px;
+  font-size: 12px;
+}
+
+.hotel-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.hotel-type-price {
+  display: flex;
+  width: 200px;
+  padding-top: 10px;
+}
+
+.hotel-type {
+  margin-left:0;
+  margin-right: auto;
+}
+
+.hotel-price {
+  margin-right:0;
+  margin-left: auto;
+}
+
+.hotel-buttons {
+  padding-top: 30px;
+}
+
+.btn {
+  margin-right: 10px;
+  height: 30px;
+  width: 150px;
+}
+
+.btn-more {
+  background-color: #90b1cf;
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+
+.btn-book {
+  background-color: #71635a;
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+
+.hotel-rates {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.hotel-stars i {
+  float: right;
+  color: #90b1cf;
+}
+
+.hotel-rating {
+  margin-top: 78px;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  color: #909090;
+  padding: 10px 30px 10px 30px;
+}
+
+
+/*************** MAP ************/
+.map {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 650px;
 }

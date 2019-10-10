@@ -538,11 +538,19 @@ hr {
   font-size: 12px;
 }
 
+.btn-more:hover {
+  background-color: #abc6db;
+}
+
 .btn-book {
   background-color: #71635a;
   border: none;
   color: white;
   font-size: 12px;
+}
+
+.btn-book:hover {
+  background-color: #85776f;
 }
 
 .hotel-rates {

@@ -1,4 +1,4 @@
-const hotels = [
+export const hotels = [
 	{name: `Hotel Labe`, type: `HOTEL`, price: `600`, stars: `2`, rate: `8.3`, pictures: [], coords: `50°52'27.542\"N,14°14'12.724\"E`, web: ``},
 	{name: `Hotel Hawel Hřensko`, type: `HOTEL`, price: `850`, stars: `2`, rate: ``, pictures: [], coords: `50°52'26.402\"N,14°14'17.634\"E`, web: ``},
 	{name: `Ubytování u Křiváků`, type: `APARTMENTS`, price: `300`, stars: `1`, rate: ``, pictures: [], coords: `50°52'25.839\"N,14°14'25.764\"E`, web: ``},
@@ -19,48 +19,9 @@ const hotels = [
 	{name: `Kemp Mezní Louka`, type: `CAMPING`, price: `70`, stars: ``, rate: `7.7`, pictures: `https://d48-a.sdn.szn.cz/d_48/c_img_G_E/jxiMZc.mpo?fl=res,667,500,1`, coords: `50°52'26.182\"N,14°19'6.770\"E`, web: `www.uforta.cz`},
 	{name: `Penzion U Loupežáku`, type: `HOTEL`, price: `390`, stars: `2`, rate: `8.6`, pictures: `https://d48-a.sdn.szn.cz/d_48/c_img_G_C/3Je4DL.jpeg`, coords: `50°51'42.278\"N,14°21'18.695\"E`, web: `www.uloupezakusweb.webmium.com`},
 	{name: `Intercamp Mosquito`, type: `CAMPING`, price: `100`, stars: ``, rate: ``, pictures: `https://d48-a.sdn.szn.cz/d_48/c_img_G_C/UoB3Sc.mpo?fl=res,400,225,3`, coords: `50°51'16.927\"N,14°21'28.559\"E`, web: `www.mosquito.cz`},
-]
+];
 
-var center = SMap.Coords.fromWGS84(14.3, 50.88);
-var map = new SMap(JAK.gel("map"), center, 14);
-map.addDefaultLayer(SMap.DEF_TURIST).enable();
-map.addDefaultControls();
 
-//var obrazek = "https://api.mapy.cz/img/api/marker/drop-red.png";
-const obrazek = `./img/pin.png`;
-
-var znacky = [];
-var souradnice = [];
-
-hotels.forEach((item) => {
-	const name = item.name;
-	const coords = item.coords;
-	var c = SMap.Coords.fromWGS84(coords);
-	console.log(coords);
-
-	var options = {
-		url:obrazek,
-		title:name,
-		anchor: {left:10, bottom: 1}  /* Ukotvení značky za bod uprostřed dole */
-}
-
-var znacka = new SMap.Marker(c, null, options);
-souradnice.push(c);
-znacky.push(znacka);
-
-})
-
-var decorationOptions = {
-    anchor: {left:0.5, top:0.5}
-}
-znacky[1].decorate(SMap.Marker.Feature.RelativeAnchor, decorationOptions);
-
-var vrstva = new SMap.Layer.Marker();     /* Vrstva se značkami */
-map.addLayer(vrstva);                          /* Přidat ji do mapy */
-vrstva.enable();                         /* A povolit */
-for (var i=0;i<znacky.length;i++) {
-    vrstva.addMarker(znacky[i]);
-}
-
-var cz = map.computeCenterZoom(souradnice); /* Spočítat pozici mapy tak, aby značky byly vidět */
-map.setCenterZoom(cz[0], cz[1]);        
+export const restaurants = [
+  {name: ``, type: ``, price: ``}
+];

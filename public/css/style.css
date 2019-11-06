@@ -5,6 +5,13 @@ body {
   color: #303030;
 }
 
+.hotels {
+  background-image: url('./img/header_gauss.png');
+  background-size: 100% 300px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .main-navigation{
   display: flex;
   flex-direction: column;
